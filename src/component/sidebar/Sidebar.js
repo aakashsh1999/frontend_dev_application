@@ -50,7 +50,7 @@ const Sidebar = () => {
     ]
 
     return (
-        <div className={showSideBar ? 'w-24 bg-black px-4' : 'w-2/6 py-8 px-6 bg-black h-screen shadow-white shadow-md text-white relative'}>
+        <div className={showSideBar ? 'w-24 bg-black px-4' : 'w-1/6 py-8 px-6 bg-black h-screen shadow-white shadow-md text-white relative'}>
             <div className='flex items-center justify-center'>
                 <div className='flex items-center'>
                     <div className='w-8 h-8 text-md bg-blue-500 rounded-full text-white flex justify-center items-center font-semibold mr-4'>N</div>

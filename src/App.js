@@ -21,9 +21,15 @@ function App() {
 
   return (
     <div>
+      <div className='w-full h-12 bg-blue-600 flex justify-center items-center text-white font-bold'>Lorem Ipsum is simply dummy text of the printing
+      </div>
       <div className="w-full h-screen flex justify-center bg-black">
         <Sidebar />
-        <div className='px-8 w-full py-8'>
+        <div className='px-8 w-full'>
+          <div className='flex pt-8 justify-between'>
+            <h2 className='text-white text-2xl'>Section</h2>
+            <button className='flex justify-between items-center bg-gray-600 rounded-xl text-white px-2 py-1 ml-4'><i class="las la-wallet text-blue-500 text-2xl"></i><p className='font-medium text-lg ml-2'>0.2 $XYZ</p><div className='bg-blue-100 rounded-md px-2 ml-6 text-blue-400'>Tier 1</div></button>
+          </div>
           <Modal show={show} setShow={() => setShow(false)} />
           <Rewards />
           <div className='flex mt-8'>

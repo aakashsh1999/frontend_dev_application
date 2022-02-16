@@ -3,7 +3,7 @@ import bitImg from '../../assets/11.png'
 
 const Modal = ({ show, setShow }) => {
     return (<>
-        {show && (<div className='w-full flex justify-between relative bg-sky-500 pt-4 pb-8 px-8 rounded-xl'>
+        {show && (<div className='w-full flex justify-between relative bg-sky-500 pt-4 mt-8 pb-8 px-8 rounded-xl'>
             <i className='las la-times w-8  h-8 border-black bg-white text-black flex justify-center items-center font-bold 
             cursor-pointer
             rounded-full absolute text-xl -top-3 -right-1'
