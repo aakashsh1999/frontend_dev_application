@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      await fetch('https://raw.githubusercontent.com/akshita151199/APIs/main/data').then((res) => res.json()).then(data => setData(data))
+      await fetch('https://raw.githubusercontent.com/akshita151199/APIs/main/data').then((res) => res.json()).then((data) => setData(data))
         .catch(err => console.err(err));
     }
     getData();
