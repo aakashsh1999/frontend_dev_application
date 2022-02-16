@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import bitImg from '../../assets/11.png'
 
 const Modal = ({ show, setShow }) => {
@@ -17,8 +17,6 @@ const Modal = ({ show, setShow }) => {
 
         </div>)}
     </>
-
-
     )
 }
 

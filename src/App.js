@@ -17,8 +17,7 @@ function App() {
         .catch(err => console.err(err));
     }
     getData();
-    console.log(data)
-  }, [])
+  }, [data])
 
   return (
     <div>
