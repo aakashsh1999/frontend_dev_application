@@ -5,11 +5,12 @@ import Modal from './component/modal/Modal';
 import Card from './component/card/Card';
 import Rewards from './component/Rewards';
 import TabsRender from './component/tabs/Tabs';
-import { getData } from './utils/api';
+// import { getData } from './utils/api';
 
 function App() {
   const [show, setShow] = useState(true)
   const [data, setData] = useState(null);
+
   useEffect(() => {
     const getData = async () => {
       const res = await fetch('https://raw.githubusercontent.com/akshita151199/APIs/main/data').then((res) => res.json()).then(data=> setData(data))
