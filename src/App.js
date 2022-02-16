@@ -10,11 +10,13 @@ import { getData } from './utils/api';
 function App() {
   const [show, setShow] = useState(true)
   const [data, setData] = useState(null);
-  useEffect(async () => {
-    const res  = await fetch('https://raw.githubusercontent.com/akshita151199/APIs/main/data').then((res) => res.json()).catch(err => console.err(err));
-    setData(res)
+  useEffect(() => {
+    const getData = async () => {
+      const res = await fetch('https://raw.githubusercontent.com/akshita151199/APIs/main/data').then((res) => res.json()).then(data=> setData(data))
+        .catch(err => console.err(err));
+    }
+    getData();
   }, [])
-
   return (
     <div>
       <div className="w-full h-screen flex justify-center bg-black">
