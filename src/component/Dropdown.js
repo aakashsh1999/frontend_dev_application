@@ -33,38 +33,36 @@ export default function Dropdown(props) {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
+                <li
                   href="#"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700 block px-4 py-2 text-sm'
                   )}
                 >
                   Account settings
-                </a>
+                </li>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <li            
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700 block px-4 py-2 text-sm'
                   )}
                 >
                   Support
-                </a>
+                </li>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <li
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700 block px-4 py-2 text-sm'
                   )}
                 >
                   License
-                </a>
+                </li>
               )}
             </Menu.Item>
             <form method="POST" action="#">
